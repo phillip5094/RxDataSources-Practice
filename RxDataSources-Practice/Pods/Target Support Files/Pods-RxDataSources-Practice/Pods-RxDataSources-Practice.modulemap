@@ -1,0 +1,6 @@
+framework module Pods_RxDataSources_Practice {
+  umbrella header "Pods-RxDataSources-Practice-umbrella.h"
+
+  export *
+  module * { export * }
+}

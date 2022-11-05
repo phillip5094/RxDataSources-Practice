@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bd9-gF-9vS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animated-->
+        <scene sceneID="vKY-Ug-38a">
+            <objects>
+                <viewController id="t1I-U2-LY7" customClass="Animated_ViewController" customModule="RxDataSources_Practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fXf-Em-5Wn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vab-4W-uIR">
+                                <rect key="frame" x="0.0" y="48" width="414" height="765"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AnimatedCell" textLabel="jmB-wx-Sig" style="IBUITableViewCellStyleDefault" id="c9K-lW-YTf">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c9K-lW-YTf" id="4Jk-fC-Mng">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jmB-wx-Sig">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cnZ-aT-sai"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cnZ-aT-sai" firstAttribute="bottom" secondItem="vab-4W-uIR" secondAttribute="bottom" id="6Ga-GB-lue"/>
+                            <constraint firstItem="cnZ-aT-sai" firstAttribute="trailing" secondItem="vab-4W-uIR" secondAttribute="trailing" id="B1q-bL-Of9"/>
+                            <constraint firstItem="vab-4W-uIR" firstAttribute="top" secondItem="cnZ-aT-sai" secondAttribute="top" id="qji-2f-Gjp"/>
+                            <constraint firstItem="vab-4W-uIR" firstAttribute="leading" secondItem="cnZ-aT-sai" secondAttribute="leading" id="vjT-MX-1ma"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Animated" image="2.square.fill" catalog="system" id="tbS-GX-T3O"/>
+                    <connections>
+                        <outlet property="tableView" destination="vab-4W-uIR" id="bBH-IV-JcR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oIx-Ka-Gyc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-343" y="1015"/>
+        </scene>
+        <!--Basic-->
+        <scene sceneID="gbN-YY-6Hf">
+            <objects>
+                <viewController id="YA1-z2-xfX" customClass="Basic_ViewController" customModule="RxDataSources_Practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qv2-pF-eZk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="kDB-q6-9Vd">
+                                <rect key="frame" x="0.0" y="48" width="414" height="765"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BasicCell" textLabel="Peb-Rv-zMa" style="IBUITableViewCellStyleDefault" id="fit-le-CTI">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fit-le-CTI" id="Hhb-Pd-GP6">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Peb-Rv-zMa">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Tio-Ef-7Es"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kDB-q6-9Vd" firstAttribute="leading" secondItem="Tio-Ef-7Es" secondAttribute="leading" id="KVO-N9-xLs"/>
+                            <constraint firstItem="Tio-Ef-7Es" firstAttribute="trailing" secondItem="kDB-q6-9Vd" secondAttribute="trailing" id="XJA-JP-U9u"/>
+                            <constraint firstItem="Tio-Ef-7Es" firstAttribute="bottom" secondItem="kDB-q6-9Vd" secondAttribute="bottom" id="ZZw-8M-jmQ"/>
+                            <constraint firstItem="kDB-q6-9Vd" firstAttribute="top" secondItem="Tio-Ef-7Es" secondAttribute="top" id="pki-Lu-oX6"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Basic" image="1.square.fill" catalog="system" id="Kd2-Tf-wpO"/>
+                    <connections>
+                        <outlet property="tableView" destination="kDB-q6-9Vd" id="9yW-XL-YgG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TWg-xE-i8E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1172" y="1015"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2oC-I3-MwE">
+            <objects>
+                <tabBarController id="bd9-gF-9vS" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kg7-xJ-d5f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="YA1-z2-xfX" kind="relationship" relationship="viewControllers" id="Gti-mR-Xel"/>
+                        <segue destination="t1I-U2-LY7" kind="relationship" relationship="viewControllers" id="P3h-xX-r0D"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Uo-DG-8CH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-774" y="252"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.square.fill" catalog="system" width="128" height="114"/>
+        <image name="2.square.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
